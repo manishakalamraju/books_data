@@ -47,10 +47,10 @@ Using summarize() function find the total no.of books for each category.
 ```{r summarize, echo=TRUE}
 books_sold %>% group_by(Category) %>% summarize(total_books=sum(Quantity))
 ```
-## # A tibble: 3 x 2
-##    Category     total_books
-##     <chr>        <int>
-## 1  "college"      793
-## 2 "competition"   872
-## 3   school"       1990
+ A tibble: 3 x 2
+    Category     total_books
+     <chr>        <int>
+ 1  "college"      793
+ 2 "competition"   872
+ 3   school"       1990
 Thus, it is clear that 'school'category books are most selled for the years 2018 & 2019.
