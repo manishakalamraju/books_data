@@ -47,6 +47,7 @@ Using summarize() function find the total no.of books for each category.
 ```{r summarize, echo=TRUE}
 books_sold %>% group_by(Category) %>% summarize(total_books=sum(Quantity))
 ```
+We get the output as shown below
 ### A tibble: 3 x 2
 ###    Category        total_books
 ###     <chr>           <int>
