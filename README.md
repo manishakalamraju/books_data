@@ -15,8 +15,6 @@ Once packages are installed we can load them by using library() function with pa
 
 ```{r loading packages,echo=TRUE}
 library(tidyverse)
-```
-```{r,echo=TRUE}
 library(here)
 library(skimr)
 library(janitor)
@@ -54,4 +52,4 @@ We get the output as shown below
 ### 1  "college"         793
 ### 2 "competition"      872
 ### 3   "school"         1990
-Thus, it is clear that 'school'category books are most selled for the years 2018 & 2019.
+Thus, it is clear that 'school'category books has the highest sales for the years 2018 & 2019.
