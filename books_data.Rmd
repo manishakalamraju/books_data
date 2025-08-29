@@ -1,15 +1,4 @@
----
-title: "BOOKS_DATA"
-author: "Kalamraju Maneesha"
-date: "2025-08-29"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r pressure, echo=FALSE}
+### R code for analysis
 books <- read.csv("books_data_india.csv")
 head(books)
 colnames(books)
@@ -18,6 +7,5 @@ books_sold <- books %>% select("Quantity","Ship.State","Category")%>%
 books_sold$Category <- tolower(books_sold$Category)
 books_sold$state <- toupper(books_sold$state)
 books_sold %>% group_by(Category) %>% summarize(total_books=sum(Quantity))
-```
 
 
